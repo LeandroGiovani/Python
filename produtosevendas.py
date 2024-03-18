@@ -29,7 +29,12 @@ for p in produtos:
     if p["id"] == produto:
         produto = p
 
+def exibir(lista):
+    for i in lista:
+        print(i)
+
 venda = {"id": 2, "data": datetime.today(), "cliente_id": cliente, "produto": produto["descrição"]}
 vendas.append(venda)
 print("Vendas")
 print(vendas)
+exibir(produtos)
